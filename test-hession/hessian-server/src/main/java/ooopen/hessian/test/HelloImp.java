@@ -1,7 +1,11 @@
 package ooopen.hessian.test;
 
 
+import com.caucho.hessian.server.HessianServlet;
+
 public class HelloImp extends HessianServlet implements Hello{
+
+
 
     @Override
     public void sayHello(User user) {

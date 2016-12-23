@@ -34,7 +34,7 @@
     <bytecodeTargetLevel>
       <module name="hessian-client" target="1.5" />
       <module name="hessian-interface" target="1.5" />
-      <module name="hessian-server" target="1.5" />
+      <module name="hessian-server" target="1.6" />
       <module name="test-hessian" target="1.5" />
     </bytecodeTargetLevel>
   </component>
