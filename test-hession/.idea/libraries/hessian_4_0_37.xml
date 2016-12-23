@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="hessian-4.0.37">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/hession-server/lib/hessian-4.0.37.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
