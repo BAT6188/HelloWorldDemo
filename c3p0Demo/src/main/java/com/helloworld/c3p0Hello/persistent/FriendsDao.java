@@ -1,6 +1,7 @@
 package com.helloworld.c3p0Hello.persistent;
 
 
+import com.helloworld.c3p0Hello.FriendBean;
 import com.helloworld.c3p0Hello.common.dbutil.DBUtil;
 
 import java.sql.SQLException;
@@ -21,8 +22,8 @@ public class FriendsDao {
      * @param friendId
      * @return
      */
-    public List queryFriends(int friendId) throws SQLException {
-        List result = null;
+    public List<FriendBean> queryFriends(int friendId) throws SQLException {
+        List<FriendBean> result = null;
         result = DBUtil.executeQuery(SQL_QUERY_Fridends, friendId);
         return result;
     }

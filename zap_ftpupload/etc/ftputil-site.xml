@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+
+    <property>
+        <name>host</name>
+        <cname>FTPhost</cname>
+        <value>10.10.20.190</value>
+        <description>默认配置</description>
+    </property>
+    <property>
+        <name>port</name>
+        <cname>FTP</cname>
+        <value>21</value>
+        <description>默认配置</description>
+    </property>
+    <property>
+        <name>username</name>
+        <cname>FTPusername</cname>
+        <value>test</value>
+        <description>默认配置</description>
+    </property>
+    <property>
+        <name>password</name>
+        <cname>FTPpassword</cname>
+        <value>test</value>
+        <description>默认配置</description>
+    </property>
+
+
+    <property>
+        <name>workstation.data.root.path</name>
+        <cname>工作站导入数据存放目录:</cname>
+        <value>D:/GM-ZAP</value>
+        <description>工作站导入数据存放的根目录</description>
+    </property>
+
+    <property>
+        <name>WorkingDirectory</name>
+        <cname>FTP服务器文件存储相对地址</cname>
+        <value>/</value>
+        <description>FTP服务器文件存储相对地址（暂不可以配 默认"/"）</description>
+    </property>
+
+</configuration>

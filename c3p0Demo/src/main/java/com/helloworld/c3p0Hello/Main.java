@@ -18,7 +18,7 @@ public class Main {
 
     public static void main(String[] args) {
         StorageServiceImpl storageService = new StorageServiceImpl();
-        List<Map> mapList = storageService.queryFriends(89);
+        List<FriendBean> mapList = storageService.queryFriends(89);
         System.out.println(mapList.toString());
     }
 }

@@ -46,6 +46,23 @@ public class DBUtil {
 
         return count;
     }
+public static  int excuteUpDate (String sql, Object... params) throws SQLException {
+    int count =0 ;
+    Connection connection = dataSource.getConnection();
+    QueryRunner runner = new QueryRunner();
+    try {
+        if (logger.isTraceEnabled())
+        count = runner.update(connection, sql, params);
+
+    } catch (Exception e) {
+        logger.error("更新失败",e);
+
+    }finally {
+        DbUtils.close(connection);
+    }
+    return count;
+}
+
 
     public static List executeQuery(String vSql, Object... params) throws SQLException {
         Connection conn = dataSource.getConnection();
@@ -61,7 +78,6 @@ public class DBUtil {
         } finally {
             DbUtils.closeQuietly(conn);
         }
-
 
         return list;
     }

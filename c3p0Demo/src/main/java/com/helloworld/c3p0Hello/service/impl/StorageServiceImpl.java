@@ -1,6 +1,7 @@
 package com.helloworld.c3p0Hello.service.impl;
 
 
+import com.helloworld.c3p0Hello.FriendBean;
 import com.helloworld.c3p0Hello.persistent.FriendsDao;
 import com.helloworld.c3p0Hello.service.interf.FindFriends;
 import org.apache.log4j.LogManager;
@@ -21,12 +22,12 @@ public class StorageServiceImpl implements FindFriends {
     public static Logger LOG = LogManager.getLogger(StorageServiceImpl.class);
 
     @Override
-    public List queryFriends(int var1) {
+    public List<FriendBean> queryFriends(int var1) {
         return queryFileEx(var1);
     }
 
-    public List queryFileEx(int id) {
-        List<Map> tList = null;
+    public List<FriendBean> queryFileEx(int id) {
+        List<FriendBean> tList = null;
         try {
             tList = new FriendsDao().queryFriends(id);
         } catch (SQLException e) {

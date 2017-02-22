@@ -1,0 +1,13 @@
+c3p0Demo/.idea/*
+c3p0DemoOrigin/.idea/*
+log4jDemo/.idea/*
+scheduledExecutorServiceDemo/.idea/*
+threadDemo/.idea/*
+zap_ftpupload/.idea/*
+c3p0DemoOrigin/.idea/*
+c3p0Demo/c3p0Demo.iml
+c3p0Demo/logs/*
+log4jDemo/log4jDemo.iml
+threadDemo/target/*
+threadDemo/threadDemo.iml
+test-hession/.idea/*
