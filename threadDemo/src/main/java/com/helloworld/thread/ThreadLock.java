@@ -1,4 +1,4 @@
-package com.helloworld.threadLock;
+package com.helloworld.thread;
 
 
 /**
@@ -11,7 +11,7 @@ package com.helloworld.threadLock;
 /**
  * 线程和锁的使用
  * */
-class MyThread implements Runnable {
+class ThreadLock implements Runnable {
     //两个对象锁
     private Object syncObject1 = new Object();
     private Object syncObject2 = new Object();
@@ -23,10 +23,10 @@ class MyThread implements Runnable {
 * 2、在for内创建MyThread对象
 * */
     public static void main(String[] args) {
-        MyThread myThread = new MyThread();
+        ThreadLock threadLock = new ThreadLock();
         for (int i = 0; i < 3; i++) {
-//            MyThread myThread = new MyThread();体验下如果在这创建对象结果是怎样的
-            Thread thread = new Thread(myThread);
+//            ThreadLock threadLock = new ThreadLock();体验下如果在这创建对象结果是怎样的
+            Thread thread = new Thread(threadLock);
             thread.start();
         }
     }

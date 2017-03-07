@@ -15,15 +15,16 @@ import java.util.concurrent.Executors;
  */
 
 /**
-*
-* 多线程
-* */
+ * 多线程
+ * 1、CyclicBarrier初始化时规定一个数目，然后计算调用了CyclicBarrier.await()进入等待的线程数。当线程数达到了这个数目时，所有进入等待状态的线程被唤醒并继续。
+ * 2、CyclicBarrier就象它名字的意思一样，可看成是个障碍， 所有的线程必须到齐后才能一起通过这个障碍。
+ */
 
 public class Binfa {
     public static void main(String[] args) {
         int count = 10;
         CyclicBarrier cyclicBarrier = new CyclicBarrier(count);
-        ExecutorService executorService = Executors.newFixedThreadPool(count);
+        ExecutorService executorService = Executors.newFixedThreadPool(count);//线程池
         for (int i = 0; i < count; i++)
             executorService.execute(new Binfa().new Task(cyclicBarrier));
         executorService.shutdown();
@@ -59,7 +60,4 @@ public class Binfa {
         }
     }
 }
-/*
-*  1、CyclicBarrier初始化时规定一个数目，然后计算调用了CyclicBarrier.await()进入等待的线程数。当线程数达到了这个数目时，所有进入等待状态的线程被唤醒并继续。
-*  2、CyclicBarrier就象它名字的意思一样，可看成是个障碍， 所有的线程必须到齐后才能一起通过这个障碍。
-* */
+
