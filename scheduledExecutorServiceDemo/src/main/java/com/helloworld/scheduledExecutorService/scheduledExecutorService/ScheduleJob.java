@@ -3,9 +3,11 @@ package com.helloworld.scheduledExecutorService.scheduledExecutorService;
 
 import java.io.File;
 import java.util.Date;
+import java.util.Random;
 import java.util.concurrent.ScheduledThreadPoolExecutor;
 
 import static java.util.concurrent.TimeUnit.HOURS;
+import static java.util.concurrent.TimeUnit.SECONDS;
 
 
 /**
@@ -29,13 +31,25 @@ public class ScheduleJob implements Runnable {
 
     private void init() {
         ScheduledThreadPoolExecutor scheduledThreadPoolExecutor = new ScheduledThreadPoolExecutor(1);
-        scheduledThreadPoolExecutor.scheduleAtFixedRate(this, 1, 1, HOURS);//this对象本身
+        scheduledThreadPoolExecutor.scheduleAtFixedRate(this, 1, 1, SECONDS);//this对象本身
     }
 
     public void run() {
         File file = new File(basePath);
         try {
-            showAllFiles(file);
+//            showAllFiles(file);
+            beeper();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+    public  void beeper(){
+        Random random= new Random();
+        try {
+            int a =random.nextInt(2);
+            int b =1;
+            System.out.println(b/a);
+//                    Thread.sleep(a);
         } catch (Exception e) {
             e.printStackTrace();
         }

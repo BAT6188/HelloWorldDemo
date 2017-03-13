@@ -20,13 +20,14 @@ import java.util.Map;
 public class DBUtil {
     public static final Logger logger = LogManager.getLogger(DBUtil.class);
 
-    private static DataSource dataSource = new ComboPooledDataSource("mysql");//初始化数据库
+    private static ComboPooledDataSource dataSource = new ComboPooledDataSource("mysql");//初始化数据库
+//    private static ComboPooledDataSource doracleDataSource = new ComboPooledDataSource("oracle");//初始化数据库
 
-    public static DataSource getDataSource() {
+    public static ComboPooledDataSource getDataSource() {
         return dataSource;
     }
 
-    public static void setDataSource(DataSource ds) {
+    public static void setDataSource(ComboPooledDataSource ds) {
         dataSource = ds;
     }
 
