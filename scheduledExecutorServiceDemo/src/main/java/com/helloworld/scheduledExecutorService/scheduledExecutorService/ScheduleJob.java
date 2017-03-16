@@ -35,21 +35,11 @@ public class ScheduleJob implements Runnable {
     }
 
     public void run() {
-        File file = new File(basePath);
+        /**
+         * */
         try {
-//            showAllFiles(file);
-            beeper();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-    }
-    public  void beeper(){
-        Random random= new Random();
-        try {
-            int a =random.nextInt(2);
-            int b =1;
-            System.out.println(b/a);
-//                    Thread.sleep(a);
+            File file = new File(basePath);
+            showAllFiles(file);
         } catch (Exception e) {
             e.printStackTrace();
         }
