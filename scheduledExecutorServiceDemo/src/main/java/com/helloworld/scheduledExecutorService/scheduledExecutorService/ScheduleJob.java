@@ -36,6 +36,7 @@ public class ScheduleJob implements Runnable {
 
     public void run() {
         /**
+         *run（）一定要破获第一层异常，如果任何异常没有处理将会终止循环作业！！！！（重要）
          * */
         try {
             File file = new File(basePath);
