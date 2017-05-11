@@ -37,6 +37,7 @@ public class Binfa {
         }
     }
 
+
     public class Task implements Runnable {
         private CyclicBarrier cyclicBarrier;
 
