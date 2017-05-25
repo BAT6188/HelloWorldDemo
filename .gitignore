@@ -11,3 +11,5 @@ log4jDemo/log4jDemo.iml
 threadDemo/target/*
 threadDemo/threadDemo.iml
 test-hession/.idea/*
+javaExample/.idea/*
+javaExample/target/*
