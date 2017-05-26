@@ -1,8 +1,6 @@
-package com.helloworld.scheduledExecutorService.scheduledExecutorService.quartz;
+package com.chow.schedule.service.quartz;
 
 import org.quartz.*;
-
-import java.util.Date;
 
 /**
  * Created with IntelliJ IDEA.

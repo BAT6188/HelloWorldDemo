@@ -1,4 +1,4 @@
-package com.helloworld.scheduledExecutorService.scheduledExecutorService;
+package com.chow.schedule.service;
 
 
 import java.io.File;
@@ -26,12 +26,6 @@ public class ScheduleJob implements Runnable {
     final String basePath = "D:/server/tem";
 
     public ScheduleJob() {
-        init();
-    }
-
-    private void init() {
-        ScheduledThreadPoolExecutor scheduledThreadPoolExecutor = new ScheduledThreadPoolExecutor(1);
-        scheduledThreadPoolExecutor.scheduleAtFixedRate(this, 1, 1, SECONDS);//this对象本身
     }
 
     public void run() {
@@ -68,7 +62,6 @@ public class ScheduleJob implements Runnable {
                     e.printStackTrace();
                 }
             }
-
                 }
 
             }

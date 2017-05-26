@@ -1,4 +1,4 @@
-package com.helloworld.scheduledExecutorService.scheduledExecutorService.quartz;
+package com.chow.schedule.service.quartz;
 
 /**
  * Created with IntelliJ IDEA.
