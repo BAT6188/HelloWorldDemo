@@ -1,4 +1,4 @@
-package com.helloworld.thread;
+package com.chow.thread;
 
 /**
  * Created with IntelliJ IDEA.

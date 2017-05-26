@@ -1,4 +1,4 @@
-package com.helloworld.thread;
+package com.chow.thread;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
