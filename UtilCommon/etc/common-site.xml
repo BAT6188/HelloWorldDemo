@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <!-- MySQL -->
+    <property>
+        <name>mysql.ip</name>
+        <value>10.10.18.36</value>
+        <description>默认值：127.0.0.1</description>
+    </property>
+    <property>
+        <name>mysql.port</name>
+        <value>3306</value>
+        <description>默认值：3306</description>
+    </property>
+    <property>
+        <name>mysql.user</name>
+        <value>root</value>
+        <description>默认值：root</description>
+    </property>
+    <property>
+        <name>mysql.pwd</name>
+        <value>123456</value>
+        <description>默认值：123456</description>
+    </property>
+
+</configuration>
