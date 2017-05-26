@@ -1,8 +1,8 @@
 c3p0Demo/.idea/*
 c3p0DemoOrigin/.idea/*
 log4jDemo/.idea/*
-scheduledExecutorServiceDemo/.idea/*
-scheduledExecutorServiceDemo/target/*
+ScheduleService/.idea/*
+ScheduleService/target/*
 threadDemo/.idea/*
 threadDemo/target/*
 zap_ftpupload/.idea/*
